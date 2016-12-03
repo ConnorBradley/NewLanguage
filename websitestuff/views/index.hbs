@@ -1,0 +1,24 @@
+
+
+<section class="container">
+  <form action="/search">
+      <h3>find word</h3>
+      <div class="input">
+        <label for="word">Word</label>
+        <input type="text" id="word" class="form-control" name="word">
+        <button type="text" class="btn btn-default">Find word</button>
+      </div>
+      <div>
+          {{# items }}
+            <article class="items">
+              <div> Original Word: {{ this.originalword }} </div>
+              <div> New Word: {{ this.newword }} </div>
+              <div> Definition: {{ this.definition }} </div>
+            </article>
+          {{/items}}
+      </div>
+  </form>
+  <form action="/test">
+    <button type="text"> test </button>
+  </form>
+</section>
